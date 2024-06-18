@@ -1,7 +1,7 @@
-<div class="fm-customer-bkg img-rounded">
+<div class="fm-customer-bkg img-rounded img-form"> 
 </div>
 
-<form class="form-horizontal" name="customerForm" novalidate>
+<!-- <form class="form-horizontal" name="customerForm" novalidate>
   <div class="modal">
     <div class="modal-header">
       <h3>Get Started</h3>
@@ -33,4 +33,31 @@
               ng-click="findRestaurants(customerName, customerAddress)">Find Restaurants!</button>
     </div>
   </div>
+</form> -->
+
+
+
+<div class="form-container">
+<form  name="customerForm" novalidate>
+  
+  <div class="modal-header">
+    <h3>Get Started</h3>
+  </div>
+
+  <div class="mb-3">
+    <label class="form-label control-label" for="customerName">Your Name</label>
+    <input type="text" class="form-control" id="customerName"  placeholder="Jackson Florez" ng-model="customerName" required>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="address">Delivery Address</label>
+    <input type="text" id="address" class="form-control input-xlarge" placeholder="432 Wiggly Rd, Mountain View, 94043" ng-model="customerAddress" required>
+  </div>
+  <div class="mb-3 form-check">
+    <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1" > -->
+    <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+  </div>
+  <button class="btn btn-light" ng-disabled="customerForm.$invalid"
+  ng-click="findRestaurants(customerName, customerAddress)">Find Restaurants!</button>
 </form>
+</div>
+
