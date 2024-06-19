@@ -10,11 +10,62 @@
   font-weight: weight;
   font-style: normal;
  }
- 
+
+ /* .form-opions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ } */
+
+ .row-fluid .fm-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
+ .row-fluid .fm-panel .stars-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+ }
+
+ /* .stars-items .stars-childs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ } */
+
+ /* .stars-items .rating {
+  text-align: center;
+ }
+  */
  .row-fluid .fm-panel h4 {
   display: flex;
   justify-content: center;
   margin: 2em;
+ }
+
+ .form-opions .form-items-restaurans {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+
+ .form-opions .form-items-restaurans .checkbox {
+  font-size: 12px;
+  margin: .5em;
+ }
+
+ .form-opions h5 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 1.5em;
  }
 
  .row-fluid .fm-restaurant-list {
@@ -22,7 +73,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5em;
+  margin: .8em;
  }
 
 .row-fluid .table {
