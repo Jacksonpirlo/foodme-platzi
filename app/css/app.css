@@ -11,6 +11,28 @@
   font-style: normal;
  }
  
+ .row-fluid .fm-panel h4 {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+ }
+
+ .row-fluid .fm-restaurant-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5em;
+ }
+
+.row-fluid .table {
+  display: flex;
+}
+
+ .row-fluid .fm-panel .checkbox {
+  display: flex;
+ }
+
 .fm-right {
   text-align: right;
 }
@@ -101,23 +123,45 @@ input.ng-invalid.ng-dirty {
 /* restaurant list */
 
 .fm-restaurant-list {
+  display: flex;
+   gap: 1em;
+   /* background-color: #E9322D; */
   min-height: 646px !important;
 }
 
-.fm-restaurant-list table {
-  margin: -10px -20px -20px -10px;
-  width: 700px;
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
+.card-container .card {
+  margin: 1em;
+}
+
+.card-container .card-body {
+  border: 1px solid #f00;
+  display: flex;
+  font-size: 13px;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
+/* .fm-restaurant-list {
+  
+} */
 
 .fm-restaurant-list th:first-child {
   width: 500px;
 }
 
 .fm-restaurant-list th {
+  /* margin: 5em; */
   width: 100px;
 }
 
 .fm-restaurant-list img {
+  margin: 15px;
   margin-right: 10px;
   width: 100px;
   height: 100px;
