@@ -15,13 +15,23 @@
   box-sizing: border-box;
  }
 
- html {
-  font-size: 75.5%;
+ body {
+  font-size: 60.5%;
   scroll-behavior: smooth;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Playwrite AU VIC", cursive !important;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
  }
- 
- .container .navbar .container-fluid {
+ .body-login {
+  background-color: rgb(255, 96, 4);
+ }
+
+ /* .container, .container-md, .container-sm {
+  max-width: 100vw;
+ } */
+
+ .navbar .container-fluid {
   display: flex;
   background-color:  rgb(255, 96, 4);
  }
@@ -36,36 +46,51 @@
    font-size: 20px;
 }
 
+
+.navbar-nav li a {
+    font-size: 15px;
+  color: #fff;
+}
 /* Form */
 
-.img-form {
+/* .img-form {
   position: relative;
   background-image: url('../img/customer_bkg.jpg');
-}
+} */
 
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* max-width: 900px; */
+  padding: 1.8em;
+  height: 80vh; /* altura del viewport */
+  width: 100vw; /* ancho del viewport */
+}
+
+.form-container form div input {
+    font-size: 12px;
+}
+
+.form-container form button {
+    font-size: 12px;
 }
 
 .form-container form {
-  position: absolute;
   color: #fff;
-  font-size: 23px;
+  font-size: 15px;
   padding: 2em;
-  width: 30vw;
+  width: 400px;
   background-color: rgb(255, 96, 4);
-  margin-top: -35em;
   border-radius: 1em;
+  margin: 20px auto;
+  transition: all 1s ease;
+  /* max-width: 420px; */
+}
+
+.form-container form:hover {
+  box-shadow: 5px 10px 10px 3px rgb(32, 27, 24);
+  transition: all 1s ease;
 }
 
 
 /* Home */
-
-
-
-
-
-
