@@ -32,6 +32,10 @@
   text-align: center;
  }
 
+ .row-fluid .fm-panel .stars-items h5 {
+  font-size: 14px;
+ }
+
  /* .stars-items .stars-childs {
   display: flex;
   flex-direction: row;
@@ -44,6 +48,7 @@
   */
  .row-fluid .fm-panel h4 {
   display: flex;
+  color: #fff;
   justify-content: center;
   margin: 2em;
  }
@@ -63,7 +68,8 @@
  }
 
  .form-opions h5 {
-  font-size: 15px;
+  font-size: 20px;
+  color: #fff;
   font-weight: bold;
   margin: 1.5em;
  }
@@ -74,6 +80,10 @@
   align-items: center;
   flex-direction: column;
   margin: .8em;
+ }
+
+ .fm-restaurant-list h4 {
+  font-size: 20px;
  }
 
 .row-fluid .table {
@@ -93,6 +103,16 @@
 /****************************************
  * angular components                   *
  ****************************************/
+
+.ng-scope {
+ box-sizing: border-box;
+}
+
+.ng-scope .breadcrumb {
+  margin-top: 1em;
+  margin-left: 1em;
+  font-size: 1em;
+}
 
 .fm-rating {
   color: #a9a9a9;
@@ -191,11 +211,16 @@ input.ng-invalid.ng-dirty {
 }
 
 .card-container .card-body {
-  border: 1px solid #f00;
   display: flex;
-  font-size: 13px;
+  font-size: 12px;
   flex-wrap: wrap;
   margin: 1em;
+  transition: all .7s ease;
+}
+
+.card-container .card-body:hover {
+  transition: all .7s ease;
+  box-shadow: 10px 10px 10px 5px #111;
 }
 
 /* .fm-restaurant-list {

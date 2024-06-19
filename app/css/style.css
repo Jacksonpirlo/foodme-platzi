@@ -51,6 +51,10 @@
     font-size: 15px;
   color: #fff;
 }
+
+.navbar-nav li {
+    margin: 1em;
+}
 /* Form */
 
 /* .img-form {
