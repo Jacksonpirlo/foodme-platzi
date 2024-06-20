@@ -1,5 +1,5 @@
 'use strict'
-export const config={ 
+exports.config={ 
     app_name:['Foodme'],
     license_key:process.env.LICENSE_KEY,
     logging:{level:'info'},
